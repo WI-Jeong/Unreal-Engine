@@ -1,0 +1,26 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+# 텝 대신 스페이스 사용
+indent_style = space
+indent_size = 4
+
+# 파일의 끝에 빈 줄 추가
+insert_final_newline = true
+
+# UTF-8 인코딩 사용
+charset = utf-8
+
+# Unreal Engine 명명 규칙
+# 예: ASomeClass, USomeClass, FSomeStruct, SomeFunction
+[*.h, *.cpp]
+# 클래스명에 대문자 'A'로 시작 (AActor, AGameMode, ...)
+# UObject 파생 클래스에 대문자 'U'로 시작 (UObject, UActorComponent, ...)
+# 구조체에 대문자 'F'로 시작 (FVector, FMyStruct, ...)
+# 함수명은 소문자로 시작 (someFunction)
+# 멤버 변수명은 소문자로 시작하고, 단어는 대문자로 시작 (myVariable)
+# 상수는 모두 대문자와 언더스코어 사용 (MY_CONSTANT)
+naming_convention = unreal
